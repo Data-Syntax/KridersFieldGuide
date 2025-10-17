@@ -5,8 +5,8 @@ This repository contains the LaTeX source files for a series of botanical-themed
 ## Table of Contents
 1.  [Project Overview](#project-overview)
 2.  [Catalogs in this Repository](#catalogs-in-this-repository)
-    - [Catalog 000: The Rose Manual (DataSynstaix)](#catalog-000-rose)
-    - [Catalog 002: The Daisy Family Field Guide (DataSyntax)](#catalog-001-daisy)
+    - [Catalog 000: Rose ](#catalog-000-rose)
+    - [Catalog 001: Daisy ](#catalog-001-daisy)
 3.  [Prerequisites](#prerequisites)
 4.  [Usage and Compilation](#usage-and-compilation)
 5.  [Future Work & Request Queue](#future-work--request-queue)
