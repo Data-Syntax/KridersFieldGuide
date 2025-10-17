@@ -1,0 +1,149 @@
+\documentclass{article}
+
+% --- Required Packages ---
+\usepackage[a4paper, margin=0in]{geometry}
+\usepackage{fontspec}
+\usepackage[svgnames]{xcolor}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+    }
+
+
+% --- FINAL COLOR PALETTE ---
+\definecolor{PaperColor}{HTML}{FDF5E6}       % Eggshell White (OldLace)
+\definecolor{TextColor}{HTML}{36454F}        % Charcoal for ALL text
+\definecolor{RuleColor}{HTML}{D3D3D3}        % Light Gray for rules
+
+% --- Document-wide Settings ---
+\setmainfont{Roboto}[
+    UprightFont = *,
+    BoldFont = * Bold,
+    ItalicFont = * Italic
+]
+\pagenumbering{gobble}
+
+% --- Document Body ---
+\begin{document}
+\pagestyle{empty}
+
+%---------------------------------------------------
+% PAGE 1: ZINNIA COVER
+%---------------------------------------------------
+\begin{tikzpicture}[remember picture, overlay]
+    \fill[PaperColor] (current page.south west) rectangle (current page.north east);
+    \coordinate (C) at (current page.center);
+
+    % --- Header Block ---
+    \node[TextColor, anchor=center] at ([yshift=12.5cm]C) {
+        \fontsize{48}{52}\bfseries DataSyntax
+    };
+    \draw[RuleColor, line width=0.4pt] ([xshift=-8cm,yshift=10.7cm]C) -- ([xshift=8cm,yshift=10.7cm]C);
+    \node[TextColor, anchor=center] at ([yshift=11.1cm]C) { 
+        \fontsize{14}{18}\bfseries\selectfont Owner's Field Guide - NO. 001: The Daisy Family (\itshape Asteraceae\normalfont)
+    };
+    \draw[RuleColor, line width=0.4pt] ([xshift=-8cm,yshift=11.5cm]C) -- ([xshift=8cm,yshift=11.5cm]C);
+    \node[TextColor, anchor=center] at ([yshift=10cm]C) {
+        \fontsize{16}{20}\selectfont October - Week 42 - 2025
+    };
+
+    % --- The Zinnia Image ---
+    \node at ([yshift=1cm]C) {\includegraphics[height=13cm]{Zinnia.png}};
+
+    % --- Footer Text Block ---
+    \node[TextColor, anchor=center] at ([yshift=-8cm]C) {
+        \fontsize{18}{25}\bfseries Common Zinnia
+    };
+    \node[TextColor, anchor=center] at ([yshift=-8.6cm]C) {
+        \fontsize{14}{17}\itshape Zinnia elegans
+    };
+    \node[TextColor, anchor=north, text width=0.7\paperwidth, align=center] at (current page.center) [yshift=-258] {
+        \fontsize{14}{22}\normalfont Named in honor of German professor Johann Gottfried Zinn. The first varieties introduced to Europe were dismissed by Spanish explorers as a rangy weed, "ugly to the eye," before cultivation transformed it into the vibrant garden jewel we know today.
+    };
+    
+    % --- Page Footer ---
+    
+    \node[TextColor, anchor=center] at (current page.south) [yshift=50] {
+        \fontsize{12}{14}\itshape Page 1 of 3
+    };
+        
+\end{tikzpicture}
+
+\newpage
+
+%---------------------------------------------------
+% PAGE 2: DAHLIA FEATURE
+%---------------------------------------------------
+\begin{tikzpicture}[remember picture, overlay]
+    \fill[PaperColor] (current page.south west) rectangle (current page.north east);
+
+    % --- The Dahlia Image ---
+    \node at (current page.center) [yshift=180] {\includegraphics[width=0.75\paperwidth]{dahlia_whole.png}};
+
+    % --- Headline, Scientific Name, and Fact Text ---
+    \node[TextColor, anchor=center] at (current page.center) [yshift=-150] {
+        \fontsize{36}{40}\bfseries The Dahlia
+    };
+    \node[TextColor, anchor=center] at (current page.center) [yshift=-175] {
+        \fontsize{14}{18}\itshape Dahlia pinnata
+    };
+    \node[TextColor, anchor=north, text width=0.7\paperwidth, align=center] at (current page.center) [yshift=-185] {
+        \fontsize{14}{22}\selectfont
+        While declared the national flower of Mexico in 1963, the Dahlia's history is often shrouded in myth. Far from being a revered treasure of Aztec emperors, historical records show it was a mountain flower first sent to Europe by a Spanish botanical expedition around 1789. Its modern name comes from Abbé José Cavanilles of Madrid's Royal Botanic Garden, who named the genus in honor of his fellow botanist, Anders Dahl.
+    };
+    
+    % --- Page Footer ---
+    \node[TextColor, anchor=center] at (current page.south) [yshift=70] {
+        \fontsize{14}{18}\selectfont DataSyntax.net
+    };
+    \node[TextColor, anchor=center] at (current page.south) [yshift=50] {
+        \fontsize{12}{14}\itshape Page 2 of 3
+    };
+\end{tikzpicture}
+
+\newpage
+
+%---------------------------------------------------
+% PAGE 3: CITATION PAGE
+%---------------------------------------------------
+\begin{tikzpicture}[remember picture, overlay]
+    \fill[PaperColor] (current page.south west) rectangle (current page.north east);
+    
+    % --- Main Title ---
+    \node[TextColor, anchor=center] at (current page.center) [yshift=250] {
+        \fontsize{32}{36}\bfseries Project Source \& Collaboration
+    };
+    
+    % --- Explanatory Text ---
+    \node[TextColor, anchor=north, text width=0.7\paperwidth, align=center] at (current page.center) [yshift=180] {
+        \fontsize{14}{22}\selectfont
+        This document was written in \LaTeX. The complete source code, image assets, and project history are available on GitHub. Suggestions, and flower requests are welcome!.
+    };
+
+    % --- GitHub Logo and Link ---
+    \node[anchor=center] at (current page.center) [yshift=-20] {
+        \href{https://github.com/Data-Syntax/OwnersFieldGuide}{\includegraphics[height=5cm]{github-mark.png}}
+    };
+    
+    \node[TextColor, anchor=center] at (current page.center) [yshift=-100] {
+        \fontsize{14}{18}\selectfont\url{https://github.com/Data-Syntax/OwnersFieldGuide}
+    };
+    
+    % --- Page Footer ---
+    \node[TextColor, anchor=center] at (current page.south) [yshift=70] {
+        \fontsize{14}{18}\selectfont DataSyntax.net
+    };
+    \node[TextColor, anchor=center] at (current page.south) [yshift=50] {
+        \fontsize{12}{14}\itshape Page 3 of 3
+    };
+\end{tikzpicture}
+
+
+\end{document}
