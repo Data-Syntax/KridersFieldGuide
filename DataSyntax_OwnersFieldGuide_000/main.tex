@@ -1,0 +1,72 @@
+% To compile this document, you must use XeLaTeX or LuaLaTeX
+% On Overleaf: Go to Menu -> Compiler and select 'XeLaTeX'.
+
+\documentclass[border=2cm]{standalone}
+
+\usepackage{fontspec}          % For loading custom fonts
+\usepackage[svgnames]{xcolor}     % For advanced color options
+\usepackage{graphicx}          % For including the image
+\usepackage{tikz}              % For drawing and positioning elements
+
+% --- Document Settings ---
+
+% 1. Define the colors to match the image
+\definecolor{PaperColor}{HTML}{F5F2E8}
+\definecolor{TextBlue}{HTML}{0B244F}
+
+% 2. Set the fonts (EB Garamond for a consistent, classic style)
+\setmainfont{EB Garamond}[
+    UprightFont = *,
+    BoldFont = * Bold,
+    ItalicFont = * Italic
+]
+
+% 3. Set the page background color
+\pagecolor{PaperColor}
+
+% --- Document Body ---
+\begin{document}
+
+% The TikZ picture environment is used for precise control over the layout.
+% All coordinates are relative to the image center (0,0).
+\begin{tikzpicture}
+
+    % --- 1. The Rose Image (IMPROVED PLACEMENT) ---
+    % Lowered and centered to give it more breathing room from the new header.
+    % IMPORTANT: Please use an image named 'rose2.png' for this to work.
+    \node (rose_image) at (0,-0.5) {\includegraphics[height=18cm]{rose2.png}};
+
+    % --- 2. UPDATED: Rose Name ---
+    % The name has been changed and formatted with a line break for clarity.
+    \node[TextBlue, anchor=center, align=center] at (0, -10) {
+        \fontspec{EB Garamond}\fontsize{14}{18}\selectfont Neil Diamond Rose \\ \itshape Rosa ‘WEKdereroro’
+    };
+
+    % --- 3. IMPROVED: Header with Wider Rules and Higher Placement ---
+    % The entire header block has been moved up to create more space.
+    \node[TextBlue, anchor=center] at (0, 13) {
+        \fontspec{EB Garamond}\fontsize{48}{52}\bfseries DataSyntax
+    };
+    
+    % The horizontal lines are now significantly wider.
+    \draw[TextBlue, line width=0.4pt] (-6, 12) -- (6, 12);
+    
+    \node[TextBlue, anchor=center, text transform=uppercase] at (0, 11.4) {
+        \fontspec{EB Garamond}\fontsize{14}{18}\selectfont Owner's Field Guide - No.000
+    };
+    
+    \draw[TextBlue, line width=0.4pt] (-6, 10.8) -- (6, 10.8);
+
+    \node[TextBlue, anchor=center] at (0, 10) {
+        \fontspec{EB Garamond}\fontsize{16}{20}\selectfont October - Week 41 - 2025
+    };
+
+    % --- 4. Website URL (Footer) ---
+    % Repositioned for optimal balance with the new layout.
+    \node[TextBlue, anchor=center] at (0, -12) {
+        \fontspec{EB Garamond}\fontsize{14}{18}\selectfont DataSyntax.net
+    };
+
+\end{tikzpicture}
+
+\end{document}
