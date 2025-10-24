@@ -1,4 +1,4 @@
-# DataSyntax Botanical Catalogs
+# Krider's Field Guide
 
 This repository contains the LaTeX source files for a series of botanical-themed catalogs and field guides created for DataSyntax. Each catalog is designed with a specific aesthetic, from classic manuals to modern field guides, and built for high-quality PDF generation using LaTeX and the TikZ package for precise layout control.
 
@@ -25,7 +25,7 @@ This project focuses on creating beautifully designed, single-subject botanical 
 -   **Description:** The first catalog in the series, designed with a classic, vintage "Owner's Manual" aesthetic. It features a serif font (EB Garamond), a parchment-like background, and detailed annotations pointing to different parts of the flower.
 -   **Required Image:** `rose.png`
 
-### Catalog 001: Daisy
+### Catalog 001: Asteraceae
 
 -   **Description:** The second catalog, which establishes the modern "Field Guide" aesthetic for the DataSyntax brand. It uses a clean, minimalist layout with a modern sans-serif font (Roboto) and a professional color palette of Eggshell White and Charcoal. This issue focuses on the Asteraceae family, featuring the Zinnia and the Dahlia.
 -   **Required Images:** `Zinnia.png`, `dahlia_whole.png`
