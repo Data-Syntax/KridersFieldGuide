@@ -8,7 +8,6 @@ This repository contains the LaTeX source files for a series of botanical-themed
     - [Catalog 000: Rose ](#catalog-000-rose)
     - [Catalog 001: Asteraceae ](#catalog-001-asteraceae)
     - [Catalog 002: Krider's Field Guide ](#catalog-002-kridersfieldguide)
-
 3.  [Prerequisites](#prerequisites)
 4.  [Usage and Compilation](#usage-and-compilation)
 5.  [Future Work & Request Queue](#future-work--request-queue)
