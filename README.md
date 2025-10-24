@@ -7,6 +7,8 @@ This repository contains the LaTeX source files for a series of botanical-themed
 2.  [Catalogs in this Repository](#catalogs-in-this-repository)
     - [Catalog 000: Rose ](#catalog-000-rose)
     - [Catalog 001: Asteraceae ](#catalog-001-asteraceae)
+    - [Catalog 002: Krider's Field Guide ](#catalog-002-kridersfieldguide)
+
 3.  [Prerequisites](#prerequisites)
 4.  [Usage and Compilation](#usage-and-compilation)
 5.  [Future Work & Request Queue](#future-work--request-queue)
@@ -29,6 +31,10 @@ This project focuses on creating beautifully designed, single-subject botanical 
 
 -   **Description:** The second catalog, which establishes the modern "Field Guide" aesthetic for the DataSyntax brand. It uses a clean, minimalist layout with a modern sans-serif font (Roboto) and a professional color palette of Eggshell White and Charcoal. This issue focuses on the Asteraceae family, featuring the Zinnia and the Dahlia.
 -   **Required Images:** `Zinnia.png`, `dahlia_whole.png`
+
+### Catalog 002: Krider's Field Guide
+- **Description:** The third catalog, continuing the modern "Field Guide" aesthetic. This issue is the first to be branded as a Krider's Field Guide, connecting the project to the Krider's Nurseries legacy, which first printed its catalog in 1906. It features a diverse collection of five flowers: the Garden Cosmos ('Rubenza'), Ox-eye Daisy, Wichura's Rose (Hybrid), a modern Orange Hybrid Rose, and Meadow Knapweed.
+- **Required Images:** `cover.jpg`, `daisy.jpg`, `redRose.jpg`, `orangeRose.jpg`, `flower.jpg`
 
 ---
 
