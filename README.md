@@ -6,7 +6,7 @@ This repository contains the LaTeX source files for a series of botanical-themed
 1.  [Project Overview](#project-overview)
 2.  [Catalogs in this Repository](#catalogs-in-this-repository)
     - [Catalog 000: Rose ](#catalog-000-rose)
-    - [Catalog 001: Daisy ](#catalog-001-daisy)
+    - [Catalog 001: Asteraceae ](#catalog-001-asteraceae)
 3.  [Prerequisites](#prerequisites)
 4.  [Usage and Compilation](#usage-and-compilation)
 5.  [Future Work & Request Queue](#future-work--request-queue)
