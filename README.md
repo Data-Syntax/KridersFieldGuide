@@ -1,3 +1,7 @@
+Of course! Here is the updated README file with the new entry for the Dried Rose issue, matching the format of the previous entries.
+
+***
+
 # Krider's Field Guide
 
 This repository contains the LaTeX source files for a series of botanical-themed catalogs and field guides created for DataSyntax. Each catalog is designed with a specific aesthetic, from classic manuals to modern field guides, and built for high-quality PDF generation using LaTeX and the TikZ package for precise layout control.
@@ -7,7 +11,8 @@ This repository contains the LaTeX source files for a series of botanical-themed
 2.  [Catalogs in this Repository](#catalogs-in-this-repository)
     - [Catalog 000: Rose ](#catalog-000-rose)
     - [Catalog 001: Asteraceae ](#catalog-001-asteraceae)
-    - [Catalog 002: Krider's Field Guide ](#catalog-002-kridersfieldguide)
+    - [Catalog 002: Krider's Field Guide ](#catalog-002-kriders-field-guide)
+    - [Catalog 003: Krider's Field Guide ](#catalog-003-kriders-field-guide)
 3.  [Prerequisites](#prerequisites)
 4.  [Usage and Compilation](#usage-and-compilation)
 5.  [Future Work & Request Queue](#future-work--request-queue)
@@ -34,6 +39,10 @@ This project focuses on creating beautifully designed, single-subject botanical 
 ### Catalog 002: Krider's Field Guide
 - **Description:** The third catalog, continuing the modern "Field Guide" aesthetic. This issue is the first to be branded as a Krider's Field Guide, connecting the project to the Krider's Nurseries legacy, which first printed its catalog in 1906. It features a diverse collection of five flowers: the Garden Cosmos ('Rubenza'), Ox-eye Daisy, Wichura's Rose (Hybrid), a modern Orange Hybrid Rose, and Meadow Knapweed.
 - **Required Images:** `cover.jpg`, `daisy.jpg`, `redRose.jpg`, `orangeRose.jpg`, `flower.jpg`
+
+### Catalog 003: Krider's Field Guide
+- **Description:** The fourth catalog in the series, maintaining the modern "Krider's Field Guide" aesthetic. This issue highlights a dried Tea Rose on the cover, in line with the fall season. The guide also features a collection of four other distinct flowers: the Sweet crab apple, Coppery vygie, Peruvian zinnia, and the unique Veggie Rose (*Rosa chinensis 'Viridiflora'*).
+- **Required Images:** `coverRose.jpg`, `flower1.jpg`, `flower2.jpg`, `flower3.jpg`, `flower4.jpg`
 
 ---
 
