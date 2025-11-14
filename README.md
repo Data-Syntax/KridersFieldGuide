@@ -76,9 +76,3 @@ This section tracks pending requests for new catalog issues.
 
 -   [ ] **New Catalog Issue:** Design and create a new catalog issue featuring the Asiatic dayflower (*Commelina communis*).
     -   *(1 request currently in the queue for this issue.)*
-
----
-
-## License
-
-This project is licensed under the MIT License - see the `LICENSE.md` file for details.
